@@ -1,18 +1,18 @@
-# info de la materia: STxxxx <nombre>
+# ST02363 Tópicos Especiales en Telemática
 #
-# Estudiante(s): nombre, email-eafit
+# Valentina Ochoa Arboleda, vochoaa@eafit.edu.co
 #
-# Profesor: nombre, email-eafit
+# Profesor:Edwin Nelson Montoya Múnera, emontoya@eafit.edu.co
 #
-# <para borrar: EL OBJETIVO DE ESTA DOCUMENTACÍON ES QUE CUALQUIER LECTOR CON EL REPO, EN ESPECIAL EL PROFESOR, ENTIENDA EL ALCANCE DE LO DESARROLLADO Y QUE PUEDA REPRODUCIR SIN EL ESTUDIANTE EL AMBIENTE DE DESARROLLO Y EJECUTAR Y USAR LA APLICACIÓN SIN PROBLEMAS>
-
-# <para borrar: renombre este archivo a README.md cuando lo vaya a usar en un caso específico>
-
-# nombre del proyecto, lab o actividad
+# 
+# Reto 2
 #
 # 1. breve descripción de la actividad
 #
-<texto descriptivo>
+<texto descriptivo
+  Este  reto consiste en realizar 3 componentes principales:>
+  ## 1. Microservicio 1:
+  
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
