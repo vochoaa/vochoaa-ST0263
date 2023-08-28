@@ -16,7 +16,6 @@
   Este esta encargado de buscar archivos mediante una query a través de MOM (RabbitMQ). Realiza la comunicación con el API Gateway.
   ## 3. Microservicio API Gateway
   Encargado de funcionar tanto como gateway como balanceador de cargas y proxy.
-  
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
