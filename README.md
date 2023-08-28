@@ -9,9 +9,9 @@
 #
 # 1. breve descripción de la actividad
 #
-<texto descriptivo
-  Este  reto consiste en realizar 3 componentes principales:>
-  ## 1. Microservicio 1:
+  Este  reto consiste en realizar 3 componentes principales.
+  ## 1. Microservicio 1:## 
+  
   
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
