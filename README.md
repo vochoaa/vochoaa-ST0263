@@ -28,10 +28,15 @@ El cliente inicia solicitudes, que pueden originarse tanto en su navegador web c
 Todos los servicios fueron implementados con Python 3.10.6. Además se incluyeron las siguientes librerías que ayudaron al correcto funcionamiento del reto: 
 
   Flask==2.2.3
+  
   grpc==1.0.0
+  
   grpcio==1.51.3
+  
   pika==1.3.1
+  
   protobuf==4.22.0
+  
   python-dotenv==1.0.
 
 ## como se compila y ejecuta.
