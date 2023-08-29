@@ -83,12 +83,8 @@ Se utiliza el local host.
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 
-# 5. otra información que considere relevante para esta actividad.
-
 # referencias:
-<debemos siempre reconocer los créditos de partes del código que reutilizaremos, así como referencias a youtube, o referencias bibliográficas utilizadas para desarrollar el proyecto o la actividad>
-## sitio1-url 
-## sitio2-url
+https://grpc.io/docs/languages/python/basics/
 ## url de donde tomo info para desarrollar este proyecto
-
-#### versión README.md -> 1.0 (2022-agosto)
+https://github.com/st0263eafit/st0263-232
+#### versión README.md -> 1.0 (2023-agosto)
