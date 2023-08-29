@@ -17,9 +17,9 @@
   ## 3. Microservicio API Gateway
   Encargado de funcionar tanto como gateway como balanceador de cargas y proxy.
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
-
+Se implementando el microservicio 1, el microservicio 2 y el microservicio API Gateway y la comunicación vía gRPC para el microservicio 1.
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
-
+No se logro la comunicación vía MOM (RabbitMQ) para el microservicio 2.
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 El cliente inicia solicitudes, que pueden originarse tanto en su navegador web como en Postman. Estas solicitudes se comunican a través de una API REST. Luego, el API Gateway establece una comunicación gRPC con el primer microservicio, que tiene la responsabilidad de listar archivos. Por otro lado, el segundo microservicio se comunica a través de un mecanismo de mensajería orientada a eventos (MOM) utilizando RabbitMQ. Este microservicio opera mediante colas y su función principal es buscar archivos basados en las consultas proporcionadas por el usuario. La elección entre estos dos modos de comunicación depende del tipo de solicitud realizada por el cliente.
 
@@ -39,8 +39,6 @@ Todos los servicios fueron implementados con Python 3.10.6. Además se incluyero
   python-dotenv==1.0.
 
 ## como se compila y ejecuta.
-## detalles del desarrollo.
-## detalles técnicos
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 Cada microservicio cuenta con su .env, donde:
 ## Gateway:
@@ -73,13 +71,11 @@ QUEUE="archivo_rpc"
  
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 Se utiliza el mismo lenguaje, librerías, paquetes y demás que en el ambiente de desarrollo.
-
 # IP o nombres de dominio en nube o en la máquina servidor.
 No se utiliza ip elestica ya que no fue subido a la nube. 
 Se utiliza el local host.
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
-
-## como se lanza el servidor.
+Se configuran de la misma manera con los archivos .env.
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 
