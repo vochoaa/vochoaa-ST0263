@@ -89,7 +89,7 @@ Se utiliza el mismo lenguaje, librerías, paquetes y demás que en el ambiente d
 No se utiliza ip elestica ya que no fue subido a la nube. 
 Se utiliza el local host.
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
-Se configuran de la misma manera con los archivos .env.
+Se configuran de la misma manera con los archivos .env. 
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 Es el mismo proceso de compilar y ejecutar el sistema
