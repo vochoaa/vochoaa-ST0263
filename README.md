@@ -21,10 +21,10 @@ Se implementando el microservicio 1, el microservicio 2 y el microservicio API G
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 No se logro la comunicación vía MOM (RabbitMQ) para el microservicio 2. 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
-El cliente inicia solicitudes, que pueden originarse tanto en su navegador web como en Postman. Estas solicitudes se comunican a través de una API REST. Luego, el API Gateway establece una comunicación gRPC con el primer microservicio, que tiene la responsabilidad de listar archivos. Por otro lado, el segundo microservicio se comunica a través de un mecanismo de mensajería orientada a eventos (MOM) utilizando RabbitMQ. Este microservicio opera mediante colas y su función principal es buscar archivos basados en las consultas proporcionadas por el usuario. La elección entre estos dos modos de comunicación depende del tipo de solicitud realizada por el cliente.
+El cliente inicia solicitudes, que pueden originarse en su navegador web. Estas solicitudes se comunican a través de una API REST. Luego, el API Gateway establece una comunicación gRPC con el primer microservicio, que tiene la responsabilidad de listar archivos. Por otro lado, el segundo microservicio se comunica a través de un mecanismo de mensajería orientada a eventos (MOM) utilizando RabbitMQ. Este microservicio opera mediante colas y su función principal es buscar archivos basados en las consultas proporcionadas por el usuario. La elección entre estos dos modos de comunicación depende del tipo de solicitud realizada por el cliente.
 
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
-Todos los servicios fueron implementados con Python 3.10.6. Además se incluyeron las siguientes librerías que ayudaron al correcto funcionamiento del reto: 
+Todos los servicios fueron implementados con Python 3.11.3. Además se incluyeron las siguientes librerías que ayudaron al correcto funcionamiento del reto: 
 
   Flask==2.2.3
   
@@ -39,6 +39,7 @@ Todos los servicios fueron implementados con Python 3.10.6. Además se incluyero
   python-dotenv==1.0.
 
 ## como se compila y ejecuta.
+
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 Cada microservicio cuenta con su .env, donde:
 ## Gateway:
@@ -81,6 +82,8 @@ Se configuran de la misma manera con los archivos .env.
 
 # referencias:
 https://grpc.io/docs/languages/python/basics/
-## url de donde tomo info para desarrollar este proyecto
+https://www.erlang.org/downloads
+https://www.rabbitmq.com/getstarted.html
+https://pypi.org/project/python-dotenv/
 https://github.com/st0263eafit/st0263-232
 #### versión README.md -> 1.0 (2023-agosto)
