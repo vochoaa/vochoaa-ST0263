@@ -42,11 +42,30 @@ Todos los servicios fueron implementados con Python 3.10.6. Además se incluyero
 ## detalles del desarrollo.
 ## detalles técnicos
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
+Cada microservicio cuenta con su .env, donde:
+## Gateway:
+HOST_GRPC=localhost
+PORT_GRPC=50051
+HOST_RMQ=localhost
+PORT_RMQ=5672
+USER=guest
+PASSWORD=guest
+QUEUE="archivo_rpc"
+## GRPC-Ser1:
+PORT_GRPC=50051
+## MOM-Ser2:
+HOST_RMQ=localhost
+PORT_RMQ=5672
+USER=guest
+PASSWORD=guest
+QUEUE="archivo_rpc"
  
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
+Se utiliza el mismo lenguaje, librerías, paquetes y demás que en el ambiente de desarrollo.
 
 # IP o nombres de dominio en nube o en la máquina servidor.
-
+No se utiliza ip elestica ya que no fue subido a la nube. 
+Se utiliza el local host.
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
 ## como se lanza el servidor.
