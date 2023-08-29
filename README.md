@@ -16,6 +16,8 @@
   Este esta encargado de buscar archivos mediante una query a través de MOM (RabbitMQ). Realiza la comunicación con el API Gateway.
   ## 3. Microservicio API Gateway
   Encargado de funcionar tanto como gateway como balanceador de cargas y proxy.
+  
+  Los cuales tendrán conexión entre ellos para que sus funcionalidades se cumplan en su totalidad.
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 Se implementando el microservicio 1, el microservicio 2 y el microservicio API Gateway y la comunicación vía gRPC para el microservicio 1.
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
@@ -39,6 +41,17 @@ Todos los servicios fueron implementados con Python 3.11.3. Además se incluyero
   python-dotenv==1.0.
 
 ## como se compila y ejecuta.
+En primera instancia se debe de clonar el repositorio:https://github.com/vochoaa/vochoaa-ST0263.git
+
+Después se ejecuta y corre el servidor, se ejecuta el comando python server.py
+
+Teniendo en ejecución el servidor, luego se debe correr el gateway, para esto se ejecuta el comando python gateway.py
+
+Por último se accede a la dirección http://127.0.0.1:5000/files
+
+Así el cliente puede observar la lista de archivos que se encuentran en la carpeta files.
+
+No se realiza la compliación y ejecución del microservicio 2.
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 Cada microservicio cuenta con su .env, donde:
@@ -76,14 +89,14 @@ Se utiliza el mismo lenguaje, librerías, paquetes y demás que en el ambiente d
 No se utiliza ip elestica ya que no fue subido a la nube. 
 Se utiliza el local host.
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
-Se configuran de la misma manera con los archivos .env.
+Se configuran de la misma manera con los archivos .env. 
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
-
+Es el mismo proceso de compilar y ejecutar el sistema
 # referencias:
 https://grpc.io/docs/languages/python/basics/
 
-https://www.erlang.org/downloads
+https://www.erlang.org/downloads 
 
 https://www.rabbitmq.com/getstarted.html
 
