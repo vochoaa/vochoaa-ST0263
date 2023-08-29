@@ -19,7 +19,7 @@
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 Se implementando el microservicio 1, el microservicio 2 y el microservicio API Gateway y la comunicación vía gRPC para el microservicio 1.
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
-No se logro la comunicación vía MOM (RabbitMQ) para el microservicio 2.
+No se logro la comunicación vía MOM (RabbitMQ) para el microservicio 2. 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 El cliente inicia solicitudes, que pueden originarse tanto en su navegador web como en Postman. Estas solicitudes se comunican a través de una API REST. Luego, el API Gateway establece una comunicación gRPC con el primer microservicio, que tiene la responsabilidad de listar archivos. Por otro lado, el segundo microservicio se comunica a través de un mecanismo de mensajería orientada a eventos (MOM) utilizando RabbitMQ. Este microservicio opera mediante colas y su función principal es buscar archivos basados en las consultas proporcionadas por el usuario. La elección entre estos dos modos de comunicación depende del tipo de solicitud realizada por el cliente.
 
