@@ -83,8 +83,6 @@ Se utiliza el local host.
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 
-## opcionalmente - si quiere mostrar resultados o pantallazos 
-
 # 5. otra información que considere relevante para esta actividad.
 
 # referencias:
