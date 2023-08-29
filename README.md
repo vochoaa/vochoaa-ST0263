@@ -39,7 +39,12 @@ Todos los servicios fueron implementados con Python 3.11.3. Además se incluyero
   python-dotenv==1.0.
 
 ## como se compila y ejecuta.
-
+En primera instancia se debe de clonar el repositorio:https://github.com/vochoaa/vochoaa-ST0263.git
+Después se ejecuta y corre el servidor, se ejecuta el comando python server.py
+Teniendo en ejecución el servidor, luego se debe correr el gateway, para esto se ejecuta el comando python gateway.py
+Por último se accede a la dirección http://127.0.0.1:5000/files
+Así el cliente puede observar la lista de archivos que se encuentran en la carpeta files.
+No se realiza la compliación y ejecución del microservicio 2.
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 Cada microservicio cuenta con su .env, donde:
 ## Gateway:
