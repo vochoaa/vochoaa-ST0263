@@ -82,8 +82,13 @@ Se configuran de la misma manera con los archivos .env.
 
 # referencias:
 https://grpc.io/docs/languages/python/basics/
+
 https://www.erlang.org/downloads
+
 https://www.rabbitmq.com/getstarted.html
+
 https://pypi.org/project/python-dotenv/
+
 https://github.com/st0263eafit/st0263-232
+
 #### versión README.md -> 1.0 (2023-agosto)
