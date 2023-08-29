@@ -3,8 +3,8 @@ import files_pb2
 import files_pb2_grpc
 import os 
 
-#from dotenv import load_dotenv
-#load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 SERVER_ADDRESS = os.getenv("HOST_GRPC")
 SERVER_PORT = os.getenv("PORT_GRPC")
