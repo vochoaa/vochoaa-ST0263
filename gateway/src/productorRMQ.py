@@ -35,7 +35,7 @@ class ArchivoMOM:
         self.corr_id = str(uuid.uuid4())
         self.channel.basic_publish(
             exchange='search_files',
-            routing_key='archivo_rpc',
+            routing_key='archivo',
             properties=pika.BasicProperties(
                 reply_to=self.callback_queue,
                 correlation_id=self.corr_id,
