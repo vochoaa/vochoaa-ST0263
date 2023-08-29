@@ -1,7 +1,7 @@
 # ST02363 Tópicos Especiales en Telemática
 #
 # Valentina Ochoa Arboleda, vochoaa@eafit.edu.co
-# 
+#  
 # Profesor:Edwin Nelson Montoya Múnera, emontoya@eafit.edu.co
 #
 # 
