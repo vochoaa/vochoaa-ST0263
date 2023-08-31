@@ -9,7 +9,7 @@
 #
 # 1. breve descripción de la actividad
 #
-  Este  reto consiste en realizar 3 componentes principales.
+  Este  reto consiste en realizar 3 componentes principales. 
   # 1. Microservicio 1
   Este esta encargado de listar archivos a través de gRPC.Realiza la comunicación con el API Gateway.
   ## 2. Microservicio 2
