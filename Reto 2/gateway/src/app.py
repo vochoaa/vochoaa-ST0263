@@ -41,7 +41,7 @@ def list_files():
         response = list_files_client.GetFilesList(files_pb2.ListFilesRequest())
         return jsonify({"files": [file.filename for file in response.files]})
         
-
+ 
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
