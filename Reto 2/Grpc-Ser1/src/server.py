@@ -18,7 +18,7 @@ class ListFilesServicer(files_pb2_grpc.FilesServicer):
         files = []
         for item in os.listdir(ROOT_PATH):
             item_path = os.path.join(ROOT_PATH, item)
-            if os.path.isfile(item_path):
+            if os.path.isfile(item_path): 
                 with open(item_path, "rb") as file:
                     file_content = file.read()
                 files.append(files_pb2.File(filename=item, file=file_content))
