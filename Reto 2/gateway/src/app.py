@@ -1,10 +1,14 @@
-import os 
-import grpc
-import json
-import productorRMQ
-from dotenv import load_dotenv
-import files_pb2, files_pb2_grpc
 from flask import Flask, jsonify, request
+import grpc
+import os 
+import pika
+import productorRMQ
+import uuid
+import json
+
+
+import files_pb2, files_pb2_grpc
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -16,6 +20,7 @@ rmq_port = os.getenv('PORT_RMQ')
 rmq_user = os.getenv('USER')
 rmq_password = os.getenv('PASSWORD')
 grpc_port = os.getenv("PORT_GRPC")
+
 
 @app.route('/search-files')
 def search_files():
@@ -31,10 +36,12 @@ def search_files():
 
 @app.route("/files")
 def list_files():
-    with grpc.insecure_channel(f'{host_grpc}:{grpc_port}') as channel:
+    with grpc.insecure_channel(f'{os.getenv("HOST_GRPC")}:{os.getenv("PORT_GRPC")}') as channel:
         list_files_client = files_pb2_grpc.FilesStub(channel)
         response = list_files_client.GetFilesList(files_pb2.ListFilesRequest())
         return jsonify({"files": [file.filename for file in response.files]})
+        
+ 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     app.run(host='0.0.0.0')
