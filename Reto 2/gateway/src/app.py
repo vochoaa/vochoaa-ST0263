@@ -1,7 +1,7 @@
 import os 
 import grpc
 import json
-import producerRMQ
+import productorRMQ
 from dotenv import load_dotenv
 import files_pb2, files_pb2_grpc
 from flask import Flask, jsonify, request
@@ -20,7 +20,7 @@ grpc_port = os.getenv("PORT_GRPC")
 @app.route('/search-files')
 def search_files():
     query = request.args.get('query')
-    producer = producerRMQ.ArchivoMOM()
+    producer = productorRMQ.ArchivoMOM()
     data = producer.call(query)
     response = app.response_class(
         response=json.dumps(data),
