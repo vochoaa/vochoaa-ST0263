@@ -1,14 +1,12 @@
 from flask import Flask, jsonify, request
+import files_pb2, files_pb2_grpc
+from dotenv import load_dotenv
 import grpc
 import os 
 import pika
 import productorRMQ
-import uuid
 import json
 
-
-import files_pb2, files_pb2_grpc
-from dotenv import load_dotenv
 
 load_dotenv()
 
