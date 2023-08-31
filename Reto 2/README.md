@@ -93,6 +93,12 @@ Se configuran de la misma manera con los archivos .env.
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 Es el mismo proceso de compilar y ejecutar el sistema
+
+#Video sustentación
+
+https://eafit-my.sharepoint.com/:v:/g/personal/vochoaa_eafit_edu_co/ERg4yi8XIkZIpzGH0CYG8qABxGFPKbePyFFVp1OSB-kXkA?e=A2a9i7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19
+
+
 # referencias:
 https://grpc.io/docs/languages/python/basics/
 
