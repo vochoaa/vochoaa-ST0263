@@ -9,7 +9,7 @@
 #
 # 1. breve descripción de la actividad
 #
-  Este  reto consiste en realizar 3 componentes principales.
+  Este  reto consiste en realizar 3 componentes principales. 
   # 1. Microservicio 1
   Este esta encargado de listar archivos a través de gRPC.Realiza la comunicación con el API Gateway.
   ## 2. Microservicio 2
@@ -19,7 +19,7 @@
   
   Los cuales tendrán conexión entre ellos para que sus funcionalidades se cumplan en su totalidad.
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
-Se implementando el microservicio 1, el microservicio 2 y el microservicio API Gateway y la comunicación vía gRPC para el microservicio 1.
+Se implementando el microservicio 1, el microservicio 2 y el microservicio API Gateway y la comunicación vía gRPC para el microservicio 1. Además para el microservicio Grpc se realizó la función de buscar archivos debido a que en MOM no fue posible.
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 No se logro la comunicación vía MOM (RabbitMQ) para el microservicio 2. 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
@@ -93,6 +93,12 @@ Se configuran de la misma manera con los archivos .env.
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 Es el mismo proceso de compilar y ejecutar el sistema
+
+#Video sustentación
+
+https://eafit-my.sharepoint.com/:v:/g/personal/vochoaa_eafit_edu_co/ERg4yi8XIkZIpzGH0CYG8qABxGFPKbePyFFVp1OSB-kXkA?e=A2a9i7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19
+
+
 # referencias:
 https://grpc.io/docs/languages/python/basics/
 
