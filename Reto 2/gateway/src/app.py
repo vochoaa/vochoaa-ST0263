@@ -20,7 +20,6 @@ rmq_password = os.getenv('PASSWORD')
 grpc_port = os.getenv("PORT_GRPC")
 
 
-
 @app.route("/files")
 def list_files():
     with grpc.insecure_channel(f'{os.getenv("HOST_GRPC")}:{os.getenv("PORT_GRPC")}') as channel:
@@ -29,7 +28,7 @@ def list_files():
         return jsonify({"files": [file.filename for file in response.files]})
     
 
-app.route("/search-files")
+app.route('/search-files')
 def search_files():
     query = request.args.get('query')
 
