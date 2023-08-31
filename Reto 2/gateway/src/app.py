@@ -28,7 +28,7 @@ def list_files():
         return jsonify({"files": [file.filename for file in response.files]})
     
 
-app.route('/buscar')
+app.route("/search")
 def search_files():
     query = request.args.get('query')
 
