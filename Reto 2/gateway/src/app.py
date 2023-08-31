@@ -28,7 +28,7 @@ def list_files():
         return jsonify({"files": [file.filename for file in response.files]})
     
 
-app.route("/search")
+@app.route('/buscar-archivo')
 def search_files():
     query = request.args.get('query')
 
@@ -59,7 +59,6 @@ def search_files():
         mimetype='application/json'
     )
     return response
-        
  
 
 if __name__ == '__main__':
