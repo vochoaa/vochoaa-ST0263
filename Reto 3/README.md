@@ -147,10 +147,6 @@ En primer lugar se comenzo creando 5 máquinas virtuales (nginx, Drupal, Drupal2
 
 - Para los Drupal, se crearon con conexión http y https, además se agregó el puerto de postgres para la base de datos (2049) no es necesario la IP estática, debido a que las conexiones se hicieron con la interna. Luego se hizo el mount, como se explicó anteriormente.
 
-## opcional - detalles de la organización del código por carpetas o descripción de algún archivo. (ESTRUCTURA DE DIRECTORIOS Y ARCHIVOS IMPORTANTE DEL PROYECTO, comando 'tree' de linux)
-
-![Alt text](image-1.png)
-
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 El proyecto se realizo en 5 máquinas virtuales:
