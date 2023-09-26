@@ -4,7 +4,7 @@
 
 # Profesor: Edwin Nelson Montoya Munera, emontoya@eafit.edu.co
 
-# nombre del proyecto, lab o actividad
+# Reto 3
 #
 # 1. breve descripción de la actividad
 #
