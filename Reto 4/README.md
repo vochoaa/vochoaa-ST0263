@@ -66,6 +66,7 @@ En primer lugar se comenzo creando 2 máquinas virtuales (Maestro y Esclavo), to
 Aqui se evidencia la creación de los componentes.
 
 ![Base de datos y Wordpress](image-2.png)
+
 Aqui se puede evidenciar que los componentes no muestran las ip's externa que es necesaria para comprobar si Wordpress esta funcionando correctamente.
 
 Aquí se evidencia el balanceador de carga utilizando ingress
