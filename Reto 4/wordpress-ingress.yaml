@@ -1,0 +1,18 @@
+echo 'apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: wordpress-ingress
+  namespace: reto4
+spec:
+  rules:
+    - host: reto4.dominio.tld
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: wordpress-service
+                port:
+                  number: 80' > wordpress-ingress.yaml
+
