@@ -30,7 +30,7 @@ Se tienen 2 instancias fundamentales para el desarrollo:
 1. Reto4: Nodo maestro
 2. Reto4-esclavo: Nodo maestro 
 
-Arquitecuta: El reto incorpora un diseño para una app monolítica, donde hay se tienen dos nodos.
+Arquitecuta: El reto incorpora un diseño para una app monolítica, donde se tienen dos nodos.
 
 Mejores prácticas: Implementación de contenedores.
 
@@ -50,7 +50,7 @@ Se crearon los manifiestos .yaml para:
 
 Primero se ejecuta el manifiesto de la base de datos de MySQL.
 Luego se ejecuta el manifiesto Wordpress dentro de este esta las demás definiciones de los manifiestos.
-Luego se ejecuta el manifiesto 
+Luego se ejecuta el manifiesto wordpress_ingress
 
 En este orden se deben deben de crear.
 
