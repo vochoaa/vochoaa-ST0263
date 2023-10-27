@@ -38,7 +38,6 @@ Mejores prácticas: Implementación de contenedores.
 
 Se instalo Microk8s para la creación de clúster Kubernetes.
 
-
 ## detalles del desarrollo.
 
 Se crearon los manifiestos .yaml para:
@@ -70,7 +69,6 @@ En primer lugar se comenzo creando 2 máquinas virtuales (Maestro y Esclavo), to
 ## opcionalmente - si quiere mostrar resultados o pantallazos
 Aqui se evidencia la creación de los componentes.
 
-
 ![Base de datos y Wordpress](image-2.png)
 
 Aqui se puede evidenciar que los componentes no muestran las ip's externa que es necesaria para comprobar si Wordpress esta funcionando correctamente.
@@ -84,6 +82,5 @@ Aqui se puede evidenciar que los componentes no muestran las ip's externa que es
 ## https://matthewdavis.io/highly-available-wordpress-on-kubernetes 
 ## https://medium.com/codex/how-to-deploy-wordpress-on-kubernetes-part-1-62cc5bd74410
 ## https://medium.com/codex/how-to-deploy-wordpress-on-kubernetes-part-2-df1cc9cbaa2e
-
 
 #### versión README.md -> 1.0 (2023-Septiembre)
