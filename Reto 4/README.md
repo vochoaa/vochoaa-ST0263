@@ -16,8 +16,6 @@ Desplegar la aplicación open source LAMP de comunidad que represente un sistema
 
 Para este reto no fue posible cumplir con los requisitos que se planteaban. Sin embargo, se logro hacer la comunicación con Wordpress y la base de datos MySQL.
 
-Tambien, se implemento en el balanceador de cargas pero no fue posible comprobar su funcionamiento.
-
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
 Solo se logró realizar dos máquinas virtuales, una maquina denominada maestro y otra esclavo.
@@ -40,9 +38,24 @@ Mejores prácticas: Implementación de contenedores.
 
 Se instalo Microk8s para la creación de clúster Kubernetes.
 
+
 ## detalles del desarrollo.
 
-Se crearon los archivos .yaml para la base de datos Mysql, Wordpress y Wordpress-ingress
+Se crearon los manifiestos .yaml para:
+1. MySQL.yaml
+2. wordpress-pv.yaml    
+3. wordpress-pvc.yaml
+4. wordpress-service.yaml
+5. wordpress-deployment.yaml
+6. wordpress-ingress.yaml
+
+Los manifiestos se ejecutan en ese mismo orden.
+
+Evidencia de los componentes funcionando.
+![Alt text](image-4.png)
+
+No se logró comprobar el funcionamiento de wordpress dentro del local ya que al ingresar a la ip proporcionada por el cluster se rechaza la conexión.
+
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
@@ -52,25 +65,15 @@ En primer lugar se comenzo creando 2 máquinas virtuales (Maestro y Esclavo), to
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
-4. Base de Datos: Base de datos postgres conectada con ambos Drupal.
-
-5. NFS-Server: Servidor que sirve para que los cambios que se hagan en ambos Drupal se vean reflejados en la misma base de datos y no sean diferentes sino que cada uno tenga la misma copia en tiempo real. 
-
-## Como se lanza el servidor.
-
-1. Se inicializan las máquinas.
-2. Entra por el navegador a las Ip's públicas de los Drupal.
-3. Se navega por el Drupal. En caso de que no cargue, se verifica en cada máquina virtual, menos la del nfs server, que los contenedores esten arriba.
+4. Base de Datos: Base de datos MySQL conectada con Wordpress.
 
 ## opcionalmente - si quiere mostrar resultados o pantallazos
 Aqui se evidencia la creación de los componentes.
 
+
 ![Base de datos y Wordpress](image-2.png)
 
 Aqui se puede evidenciar que los componentes no muestran las ip's externa que es necesaria para comprobar si Wordpress esta funcionando correctamente.
-
-Aquí se evidencia el balanceador de carga utilizando ingress
-![Balanceador de carga Ingress](image-1.png)
 
 # 5. otra información que considere relevante para esta actividad.
 

@@ -16,9 +16,9 @@ spec:
         image: mysql:latest
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: RETO4
+          value: RETO4  # Personaliza la contraseña del usuario root
         - name: MYSQL_DATABASE
-          value: DATABASE
+          value: DATABASE  # Personaliza el nombre de la base de datos
         ports:
         - containerPort: 3306
 
@@ -26,11 +26,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql-service  # Nombre del servicio
+  name: mysql-service
 spec:
   selector:
     app: mysql
   ports:
     - protocol: TCP
-      port: 3306  # Puerto que expondrá el servicio
+      port: 3306
       targetPort: 3306
