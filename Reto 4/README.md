@@ -42,7 +42,21 @@ Se instalo Microk8s para la creación de clúster Kubernetes.
 
 ## detalles del desarrollo.
 
-Se crearon los archivos .yaml para la base de datos Mysql, Wordpress y Wordpress-ingress
+Se crearon los manifiestos .yaml para:
+1. La base de datos Mysql.
+2. Wordpress 
+    Dentro del yaml se encuentra el service,pv y pvc.
+3. Wordpress-ingress
+
+Primero se ejecuta el manifiesto de la base de datos de MySQL.
+Luego se ejecuta el manifiesto Wordpress dentro de este esta las demás definiciones de los manifiestos.
+Luego se ejecuta el manifiesto 
+
+En este orden se deben deben de crear.
+
+Evidencia de los componentes funcionando.
+![Alt text](image-3.png)
+
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
@@ -52,25 +66,17 @@ En primer lugar se comenzo creando 2 máquinas virtuales (Maestro y Esclavo), to
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
-4. Base de Datos: Base de datos postgres conectada con ambos Drupal.
-
-5. NFS-Server: Servidor que sirve para que los cambios que se hagan en ambos Drupal se vean reflejados en la misma base de datos y no sean diferentes sino que cada uno tenga la misma copia en tiempo real. 
-
-## Como se lanza el servidor.
-
-1. Se inicializan las máquinas.
-2. Entra por el navegador a las Ip's públicas de los Drupal.
-3. Se navega por el Drupal. En caso de que no cargue, se verifica en cada máquina virtual, menos la del nfs server, que los contenedores esten arriba.
+4. Base de Datos: Base de datos MySQL conectada con Wordpress.
 
 ## opcionalmente - si quiere mostrar resultados o pantallazos
 Aqui se evidencia la creación de los componentes.
+
 
 ![Base de datos y Wordpress](image-2.png)
 
 Aqui se puede evidenciar que los componentes no muestran las ip's externa que es necesaria para comprobar si Wordpress esta funcionando correctamente.
 
-Aquí se evidencia el balanceador de carga utilizando ingress
-![Balanceador de carga Ingress](image-1.png)
+
 
 # 5. otra información que considere relevante para esta actividad.
 
