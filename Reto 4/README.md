@@ -45,7 +45,7 @@ Se crearon los manifiestos .yaml para:
 2. wordpress-pv.yaml    
 3. wordpress-pvc.yaml
 4. wordpress-service.yaml
-5. wordpress-deployment.yaml
+5. wordpress.yaml
 6. wordpress-ingress.yaml
 
 Los manifiestos se ejecutan en ese mismo orden.
