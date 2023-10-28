@@ -41,7 +41,7 @@ Se instalo Microk8s para la creación de clúster Kubernetes.
 ## detalles del desarrollo.
 
 Se crearon los manifiestos .yaml para:
-<<<<<<< HEAD
+
 1. MySQL.yaml
 2. wordpress-pv.yaml    
 3. wordpress-pvc.yaml
