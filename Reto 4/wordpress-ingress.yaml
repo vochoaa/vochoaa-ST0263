@@ -13,3 +13,4 @@ spec:
             name: wordpress
             port:
               number: 8080
+

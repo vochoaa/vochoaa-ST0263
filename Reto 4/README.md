@@ -28,7 +28,7 @@ Se tienen 2 instancias fundamentales para el desarrollo:
 1. Reto4: Nodo maestro
 2. Reto4-esclavo: Nodo maestro 
 
-Arquitecuta: El reto incorpora un diseño para una app monolítica, donde hay se tienen dos nodos.
+Arquitecuta: El reto incorpora un diseño para una app monolítica, donde se tienen dos nodos.
 
 Mejores prácticas: Implementación de contenedores.
 
@@ -41,11 +41,12 @@ Se instalo Microk8s para la creación de clúster Kubernetes.
 ## detalles del desarrollo.
 
 Se crearon los manifiestos .yaml para:
+<<<<<<< HEAD
 1. MySQL.yaml
 2. wordpress-pv.yaml    
 3. wordpress-pvc.yaml
 4. wordpress-service.yaml
-5. wordpress.yaml
+5. wordpress-deployment.yaml
 6. wordpress-ingress.yaml
 
 Los manifiestos se ejecutan en ese mismo orden.
@@ -54,7 +55,6 @@ Evidencia de los componentes funcionando.
 ![Alt text](image-4.png)
 
 No se logró comprobar el funcionamiento de wordpress dentro del local ya que al ingresar a la ip proporcionada por el cluster se rechaza la conexión.
-
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
@@ -69,9 +69,11 @@ En primer lugar se comenzo creando 2 máquinas virtuales (Maestro y Esclavo), to
 ## opcionalmente - si quiere mostrar resultados o pantallazos
 Aqui se evidencia la creación de los componentes.
 
+
 ![Base de datos y Wordpress](image-2.png)
 
 Aqui se puede evidenciar que los componentes no muestran las ip's externa que es necesaria para comprobar si Wordpress esta funcionando correctamente.
+
 
 # 5. otra información que considere relevante para esta actividad.
 
