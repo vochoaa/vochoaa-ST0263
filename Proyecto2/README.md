@@ -29,10 +29,15 @@ No se pudo implementar el servicio de base de datos en HA.
 1. Se crearon los manifiestos que eran necesarios para el despliegue.
 
 -mysql-secret.yaml
+
 -mysql-pv-pvc.yaml
+
 -mysql-statefulset.yaml
+
 -mysql-service.yaml
+
 -wordpress-pv-pvc.yaml
+
 -wordpress-deployment.yaml
 
 Al momento de aplicar los manifiestos de mysql-pv-pvc.yaml se presenta un error con la ruta que no se lográ resolver para la entrega.
@@ -56,22 +61,29 @@ Para la implementación de la base de datos administrada  externamente al clúst
 
 
 1. Creación del cluster
+
 ![Alt text](image.png)
+
 ![Alt text](image-1.png)
 
 2. Creación de volúmenes 
+
 ![Alt text](image-2.png)
 
 3. Creación de instancia de MySQL para Wordpress
+
 ![Alt text](image-3.png)
 
 4. Implementación de Wordpress
     
 Se crean los servicios y los secretos
+
 ![Alt text](image-4.png)
+
 ![Alt text](image-5.png)
 
 Implementación de Wordpress
+
 ![Alt text](image-6.png)
 
 Exponer el servicio Wordpress
@@ -79,11 +91,11 @@ Exponer el servicio Wordpress
 ![Alt text](image-7.png)
 
 Wordpress funcionando
+
 ![Alt text](image-8.png)
+
 ![Alt text](image-9.png)
 
-5. wordpress-deployment.yaml
-6. wordpress-ingress.yaml
 
 Se debe de realizar en el mismo orden.
 
